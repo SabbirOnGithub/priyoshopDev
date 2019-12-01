@@ -155,7 +155,11 @@ namespace BS.Plugin.NopStation.MobileWebApi
           //  actionName = "Configure";
             actionName = "GeneralSetting";
             controllerName = "MobileWebApiConfiguration";
-            routeValues = new RouteValueDictionary() { { "Namespaces", "BS.Plugin.NopStation.MobileWebApi.Controllers" }, { "area", null } };
+            routeValues = new RouteValueDictionary()
+            {
+                { "Namespaces", "BS.Plugin.NopStation.MobileWebApi.Controllers" }, 
+                { "area", null }
+            };
         }
 
         public IList<string> GetWidgetZones()

@@ -353,6 +353,14 @@ namespace BS.Plugin.NopStation.MobileWebApi.Controllers
                     paymentMethodToSelect.Selected = true;
             }
 
+            var paymentMethodModel = new CheckoutPaymentMethodResponseModel.PaymentMethodModel();
+            paymentMethodModel.Name = "Partial Payment";
+            paymentMethodModel.PaymentMethodSystemName = "Payments.PartialPayment";
+            paymentMethodModel.LogoUrl = "http://localhost:15536/plugins/Payments.CashOnDelivery/logo.png";
+            paymentMethodModel.Selected = false;
+
+            model.PaymentMethods.Add(paymentMethodModel);
+
             return model;
         }
 

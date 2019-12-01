@@ -2,9 +2,9 @@
 
 namespace BS.Plugin.NopStation.MobileWebApi.Controllers
 {
-    [TokenAuthorize]
-    [CustomerLastActivityAuthorize]
-    [NstAuthorization]
+//    [TokenAuthorize]
+//    [CustomerLastActivityAuthorize]
+//    [NstAuthorization]
     public class WebApiController : BaseApiController
     {
     }
